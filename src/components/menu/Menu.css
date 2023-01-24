@@ -1,0 +1,19 @@
+.menu{
+    padding: 10px;
+}
+
+.skills_link{
+    text-decoration: none;
+    color: black;
+}
+.skills_link:hover{
+    color: orange;
+}
+
+.work_link{
+    text-decoration: none;
+    color: black;
+}
+.work_link:hover{
+    color: orange;
+}
