@@ -1,0 +1,81 @@
+.header {
+  background-color: #f0f8ff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: header;
+}
+.feature-yellow {
+  background-color: #fffacd;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: fYellow;
+}
+.feature-purple {
+  background-color: #e6e6fa;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: fPurple;
+}
+.feature-red {
+  background-color: #cd5c5c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: fRed;
+}
+.sign-up {
+  background-color: #add8e6;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: signUp;
+}
+.content {
+  background-color: #f0fff0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: content;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 250px 150px auto;
+  grid-template-areas:
+    "   header   header    header   "
+    "   fYellow  fPurple   fRed     "
+    "   signUp   signUp    signUp   "
+    "   content  content   content  ";
+}
+
+@media screen and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px auto 150px 150px;
+    grid-template-areas:
+      "   header   header    "
+      "   content  content   "
+      "   signUp   fPurple    "
+      "   fRed     fYellow       ";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto repeat(4, 100px);
+    grid-template-areas:
+      "   header    "
+      "   content   "
+      "   signUp    "
+      "   fPurple   "
+      "   fYellow   "
+      "   fRed      ";
+  }
+}
