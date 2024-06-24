@@ -1,0 +1,106 @@
+.container {
+    display: grid;
+    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(5, 100px);
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+    grid-template-areas: 
+    "   .      item3  .      .      .   "
+    "   .      item3  .      .      .   "
+    "   .      .      item2  item2  .   "
+    "   item4  .      .      .      .   "
+    "   item4  .      .      .      .   "
+    ;
+}
+
+.item1 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item1;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item2 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item2;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item3 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item3;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item4 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item4;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item5 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item5;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item6 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item6;
+    background-color: #FAEBD7;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item7 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item7;
+    background-color: #5F9EA0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item8 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item8;
+    background-color: #90EE90;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item9 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item9;
+    background-color: #FFA07A;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item10 {
+    //it represents the grid-row-begin / grid-column-begin / grid-row-end / grid-column-end
+    grid-area: item10;
+    background-color: #808000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
